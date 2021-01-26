@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='http://fonts.googleapis.com/css?family=Kumbh+Sans:400,700' rel='stylesheet' type='text/css'>
   
   <title>Profile card component</title>
 
@@ -14,6 +15,7 @@
       background-image: url("./images/bg-pattern-top.svg");
       background-position: top -400px left -400px;
       background-repeat: no-repeat;
+      font-family: 'Kumbh Sans', sans-serif;
     }
 
     .container {
@@ -24,13 +26,41 @@
     }
 
     .card {
-      display: flex;
       background-color: white;
       background-image: url("./images/bg-pattern-card.svg");
       background-repeat: no-repeat;
       border-radius: 15px;
+      display: grid;
       height: 400px;
       width: 300px;
+    }
+
+    .card__image {
+      background-color: white;
+      background-image: url("./images/image-victor.jpg");
+      border-radius: 50%;
+      border: solid 5px white;
+      position: absolute;
+      margin: 100px;
+      height: 100px;
+      width: 100px;
+    }
+
+    .card__footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      text-align: center;
+      position: relative;
+      top: 300px;
+      border-top: solid 2px hsl(0, 0%, 84%);
+      padding-top: 10px;
+    }
+
+    .card__footer span {
+      color: hsl(0, 0%, 84%);
+      display: block;
+      padding-top: 5px;
     }
   </style>
 </head>
@@ -39,9 +69,22 @@
     <div class="card">
       <div class="card__image">
       </div>
-      <div card="card__author">
-      </div>
       <div class="card__footer">
+        <section>
+          <p>
+            80K <span>Followers</span>
+          </p>
+        </section>
+        <section>
+          <p>
+              803K <span>Likes</span>
+          </p>
+        </section>
+        <section>
+          <p>
+            1.4K <span>Photos</span>
+          </p>
+        </section>
       </div>
     </div>
   </div>
