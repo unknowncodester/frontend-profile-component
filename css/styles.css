@@ -1,7 +1,7 @@
 body {
     background-color: hsl(185, 75%, 39%);
     background-image: url("../img/bg-pattern-top.svg"), url("../img/bg-pattern-bottom.svg");
-    background-position: top -550px left -400px, top 400px left 400px;
+    background-position: top -550px left -400px, top 400px left 545px;
     background-repeat: no-repeat, no-repeat;
     color: hsl(229, 23%, 23%);
     font-family: 'Kumbh Sans', sans-serif;
